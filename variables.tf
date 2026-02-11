@@ -13,7 +13,7 @@ EOT
     name                                 = string
     server_id                            = string
     subnet_id                            = string
-    ignore_missing_vnet_service_endpoint = optional(bool, false)
+    ignore_missing_vnet_service_endpoint = optional(bool) # Default: false
   }))
 }
 

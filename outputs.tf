@@ -1,3 +1,7 @@
+output "mssql_virtual_network_rules_id" {
+  description = "Map of id values across all mssql_virtual_network_rules, keyed the same as var.mssql_virtual_network_rules"
+  value       = { for k, v in azurerm_mssql_virtual_network_rule.mssql_virtual_network_rules : k => v.id }
+}
 output "mssql_virtual_network_rules_ignore_missing_vnet_service_endpoint" {
   description = "Map of ignore_missing_vnet_service_endpoint values across all mssql_virtual_network_rules, keyed the same as var.mssql_virtual_network_rules"
   value       = { for k, v in azurerm_mssql_virtual_network_rule.mssql_virtual_network_rules : k => v.ignore_missing_vnet_service_endpoint }

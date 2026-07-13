@@ -13,7 +13,7 @@ EOT
     name                                 = string
     server_id                            = string
     subnet_id                            = string
-    ignore_missing_vnet_service_endpoint = optional(bool) # Default: false
+    ignore_missing_vnet_service_endpoint = optional(bool)
   }))
   # --- Unconfirmed validation candidates, derived from azurerm_mssql_virtual_network_rule's provider source ---
   # Not auto-enabled: either a bespoke provider validator we can't safely translate,
